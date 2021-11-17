@@ -6,8 +6,57 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
 </head>
 <body>
-ola
-    <section id="teste"></section>
+    <div class="container">
+    <header>
+        <div id="container-header">
+         <div id="logo_area">
+            <img src="{{ url_for('static', filename='img/logo_p2.jpeg') }}" id="img_logo" width="10px" height="10px">
+        </div>
+                 <div id="informar">
+                <input type="text" name="search" id="search" placeholder="O que está procurando?">
+
+                <img src="{{ url_for('static', filename='img/lupa.png') }}" alt="" class="img_header">
+                </div>
+
+
+            <div id="login">
+                <div>
+                    <img src="{{ url_for('static', filename='img/pessoa.png') }}">
+                    <a href="">Minha conta</a>
+                </div>
+                <div>
+                    <img src="{{ url_for('static', filename='img/carrinho_header.png') }}">
+                </div>
+            </div>
+
+            <div id="idiomas">
+                <img src="{{ url_for('static', filename='img/portugues.png') }}" >
+                <img src="{{ url_for('static', filename='img/espanhol.png') }}">
+                <img src="{{ url_for('static', filename='img/ingles.png') }}">
+            </div>
+
+
+
+
+        </div>
+    </header>
+        <section id="fotos">
+            <img src="{{ url_for('static', filename='img/banner.jpeg') }}">
+
+        </section>
+        <section id="conteudo" >
+
+            <section id="teste"></section>
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+    </div>
 <script>
     xhr = new XMLHttpRequest();
     xhr.open("GET", "/list");

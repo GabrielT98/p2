@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <p>funciona</p>
-    {% for produto in lista_produtos %}
-        <p>{{ produto.getName() }}</p>
-        <p>{{ produto.getId() }}</p>
-        <p>{{ produto.getDescription() }}</p>
-
-    {% endfor %}
-</body>
-</html>
+{% for produto in lista_produtos %}
+    <div class="produto">
+        <h1>{{ produto.getName() }}</h1>
+    </div>
+{% endfor %}

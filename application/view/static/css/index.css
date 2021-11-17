@@ -1,3 +1,82 @@
 body{
     background-color: green;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 10vh 36vh 37vh 17vh;
+}
+header{
+    background-color: white;
+    grid-column: 1/6;
+
+}
+#fotos{
+    grid-column: 1/6;
+
+}
+#fotos img{
+    width: 100%;
+    height: 100%;
+}
+#conteudo{
+    grid-column: 1/6;
+    background-color: white;
+}
+#teste{
+    display: grid;
+    justify-content: space-around;
+}
+footer{
+    background-color: aqua;
+    grid-column: 1/6;
+}
+
+#container-header{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+#img_logo{
+    width: 130px;
+    height: 60px;
+    padding-left: 200px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+}
+#idiomas,#login{
+    display: flex;
+    justify-content: flex-end;
+}
+#idiomas img{
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+}
+#login img{
+    width: 25px;
+    height: 25px;
+}
+
+#informar img{
+     width: 25px;
+    height: 25px;
+
+
+}
+
+#informar,#login{
+    margin-top: 10px;
+}
+#informar{
+    margin-left: 70px;
+}
+#login{
+    margin-left: 130px;
 }
